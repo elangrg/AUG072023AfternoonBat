@@ -6,6 +6,10 @@ namespace AUG072023AfternoonBat
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.AddSingleton<Models.Employee>();
+
+            builder.Services.AddSingleton<Models.ProductCart>();
+
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
@@ -24,7 +28,7 @@ namespace AUG072023AfternoonBat
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=ModelBinderEg}/{action=Index}/{id?}");
+                pattern: "{controller=DependencyInjectEg}/{action=Index}/{id?}");
 
             app.Run();
         }

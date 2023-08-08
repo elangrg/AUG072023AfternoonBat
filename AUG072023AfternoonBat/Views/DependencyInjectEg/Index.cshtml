@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+@inject ProductCart Obj
+
+
+<h1>Index</h1>
+
+
+
+<h2>
+    Class Level Object : @ViewBag.employee <br />
+
+    Method level Object : @ViewBag.LocalEmp <br />
+
+    Total Item in Cart : @Obj.CurrentNoOfitems
+
+
+</h2>
+ 
+
+
+
+
