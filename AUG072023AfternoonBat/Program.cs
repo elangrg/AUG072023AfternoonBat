@@ -54,7 +54,7 @@ namespace AUG072023AfternoonBat
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=RazorViewEngineEg}/{action=Index}/{id?}");
+                pattern: "{controller=RazorViewEngineEg}/{action=NestedLayoutContent}/{id?}");
 
             app.Run();
         }

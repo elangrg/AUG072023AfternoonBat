@@ -8,5 +8,16 @@ namespace AUG072023AfternoonBat.Controllers
         {
             return View();
         }
+
+
+        public IActionResult SimpleLayoutContent()
+        {
+            return View();
+        }
+ public IActionResult NestedLayoutContent()
+        {
+            return View();
+        }
+
     }
 }
